@@ -11,6 +11,6 @@
 SERIAL=`system_profiler SPUSBDataType | grep -B 5 -i ': iLok' | grep 'Serial' | cut -f 2 -d ":" | sed -e "s/ //"`
 #SERIAL=`system_profiler SPUSBDataType | grep -B 5 -i ': iLok' | grep 'Serial'`
 
-echo '&lt;result&gt;'$SERIAL'&lt;/result&gt;'
+    echo '<result>'$SERIAL'</result>'
 </scriptContentsMac>
 </extensionAttribute>
